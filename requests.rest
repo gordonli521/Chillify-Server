@@ -1,0 +1,35 @@
+GET http://localhost:5000/users/60f0c2795b317524b374bf4b/favorites
+Authorization: Bearer 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYXZvcml0ZXMiOlsiNjBkZmUwNjM5NDEzMDMxNzM5YzM1ODU1Il0sIl9pZCI6IjYwZjBjMjc5NWIzMTc1MjRiMzc0YmY0YiIsIm5hbWUiOiJnIiwiZW1haWwiOiJnQGciLCJwYXNzd29yZCI6IiQyYSQxMCRKOHpzeWg1ZWp3MUJYeTVFWHlSZFAuTVVobXNiVDMuRTF5bTg3Qmd0Wmgzbk5HQVRjaGVmdSIsIl9fdiI6MCwiaWF0IjoxNjI2NDg5NjU4LCJleHAiOjE2MjY0ODk2NzN9.6cLnlurM8wINC6IsWzneJVh_-eBSyIrHHRA1SkL7F_g
+###
+
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "email": "g@g",
+    "password": "g"
+}
+
+###
+
+POST http://localhost:5000/auth/token
+Content-Type: application/json
+
+{"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjBjMjc5NWIzMTc1MjRiMzc0YmY0YiIsImlhdCI6MTYyNjU5NjczMywiZXhwIjoxNjI2NTk2NzkzfQ.1ZDxqPbdqXfJL1j3EaSGREd4u-IW87Qnepa9dDQY1vQ"
+}
+
+###
+
+DELETE http://localhost:5000/auth/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYXZvcml0ZXMiOlsiNjBkZmUwNjM5NDEzMDMxNzM5YzM1ODU1Il0sIl9pZCI6IjYwZjBjMjc5NWIzMTc1MjRiMzc0YmY0YiIsIm5hbWUiOiJnIiwiZW1haWwiOiJnQGciLCJwYXNzd29yZCI6IiQyYSQxMCRKOHpzeWg1ZWp3MUJYeTVFWHlSZFAuTVVobXNiVDMuRTF5bTg3Qmd0Wmgzbk5HQVRjaGVmdSIsIl9fdiI6MCwiaWF0IjoxNjI2NDg5NjU4fQ.npqNQpvYwtdVMrAEelbA77u5SJ6LzR86VL681CYSfT8"
+}
+
+###
+
+GET http://localhost:5000/auth/user
+Content-Type: application/json
+

@@ -1,0 +1,4 @@
+{
+  "ACCESS_TOKEN_SECRET": "d71d021ac2371c4a8c557449cc1997333b34aaa1866f9015e2f23bab34929c844aa10890f3fd6bcd8561117728fb3b19b4b1126e2d550996e2d4d31b310d8a6d",
+  "MONGO_URI": "mongodb+srv://gordon:Abc123@songify.dgr0g.mongodb.net/songify?retryWrites=true&w=majority"
+}
