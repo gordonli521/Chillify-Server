@@ -34,7 +34,7 @@ router.post("/login", (req, res) => {
       jwt.sign(
         { id: user._id },
         config.get("ACCESS_TOKEN_SECRET"),
-        { expiresIn: 300 },
+        { expiresIn: 3600 },
         (err, token) => {
           if (err) throw err;
           res.json({
